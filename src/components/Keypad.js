@@ -2,8 +2,12 @@
 import React, { Component } from "react";
 
 class Keypad extends React.Component {
+  handleThePassword = () => {
+    console.log("Entering Password...");
+  };
+
   render() {
-    // return ()
+    return <div> input type="password" onKeyUp={this.handleThePassword}/></div>;
   }
 }
 
